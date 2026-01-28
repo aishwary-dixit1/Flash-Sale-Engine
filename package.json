@@ -10,7 +10,8 @@
   "scripts": {
     "start": "node src/server.js",
     "test": "jest",
-    "test:stress": "jest tests/stress.test.js --detectOpenHandles"
+    "test:stress": "jest tests/stress.test.js",
+    "test:highStress": "jest tests/highStress.test.js"
   },
   "repository": {
     "type": "git",
