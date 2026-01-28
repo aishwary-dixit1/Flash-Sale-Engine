@@ -8,7 +8,9 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/server.js",
+    "test": "jest",
+    "test:stress": "jest tests/stress.test.js --detectOpenHandles"
   },
   "repository": {
     "type": "git",
@@ -28,5 +30,8 @@
     "ioredis": "^5.9.2",
     "mongoose": "^9.1.5",
     "nodemon": "^3.1.11"
+  },
+  "devDependencies": {
+    "supertest": "^7.2.2"
   }
 }
